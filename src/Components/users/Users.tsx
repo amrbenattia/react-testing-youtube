@@ -1,23 +1,23 @@
-import axios from "axios";
-import React, { useCallback, useEffect, useState } from "react";
+import axios from 'axios'
+import React, { useCallback, useEffect, useState } from 'react'
 
 const Users = () => {
-  const [users, setUsers] = useState<string[]>([]);
-  const [error, setError] = useState<string | null>(null);
+  const [users, setUsers] = useState<string[]>([])
+  const [error, setError] = useState<string | null>(null)
   const handleGetUsers = useCallback(async () => {
     try {
       const result = await axios.get(
-        "https://jsonplaceholder.typicode.com/users"
-      );
-      setUsers(result.data.map((user: any) => user.name));
+        'https://jsonplaceholder.typicode.com/users'
+      )
+      setUsers(result.data.map((user: any) => user.name))
     } catch {
-      setError("Error fetching users");
+      setError('Error fetching users')
     }
-  }, []);
+  }, [])
 
   useEffect(() => {
-    handleGetUsers();
-  }, [handleGetUsers]);
+    handleGetUsers()
+  }, [handleGetUsers])
 
   return (
     <div>
@@ -29,7 +29,7 @@ const Users = () => {
         ))}
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default Users;
+export default Users

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 const Counter = () => {
-  const [count, setCount] = useState(0);
-  const [amount, setAmount] = useState(0);
+  const [count, setCount] = useState(0)
+  const [amount, setAmount] = useState(0)
   return (
     <>
       <h1>{count}</h1>
@@ -33,7 +33,7 @@ const Counter = () => {
         <input id="upload-file" type="file" />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Counter;
+export default Counter

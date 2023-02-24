@@ -1,1 +1,1 @@
-export type greet = { name?: string };
+export type greet = { name?: string }
