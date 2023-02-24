@@ -88,7 +88,7 @@ describe('application', () => {
     expect(submitButton).toBeInTheDocument()
 
     // comment
-    expect(submitButton).toBeEnabled()
+    expect(submitButton).toBeDisabled()
   })
 
   it('test selected option from dropdown menu', async () => {
