@@ -63,8 +63,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "eslint",
-      "tsc-files --noEmit"
+      "eslint"
     ],
     "*.{ts,tsx,css,scss}": [
       "prettier --write"
