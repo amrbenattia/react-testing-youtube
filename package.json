@@ -26,7 +26,7 @@
     "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!axios)/\"",
     "eject": "react-scripts eject",
     "lint": "eslint --ignore-path .gitignore .",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{ts, tsx, css, scss}\"",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css,scss}\"",
     "coverage": "yarn test --coverage --watchAll --collectCoverageFrom='src/Components/**/*.{tsx,ts}' --collectCoverageFrom='!src/Components/**/*.{types,constants,stories,test,spec}.{ts,tsx}'",
     "prepare": "husky install"
   },
@@ -58,5 +58,13 @@
     "lint-staged": "^13.1.2",
     "msw": "^1.0.1",
     "prettier": "2.8.4"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint"
+    ],
+    "*.{ts,tsx,css,scss}": [
+      "prettier --write"
+    ]
   }
 }
