@@ -86,6 +86,7 @@ describe('application', () => {
     expect(term3Element).toBeInTheDocument()
     const submitButton = screen.getByRole('button', { name: 'Submit' })
     expect(submitButton).toBeInTheDocument()
+
     expect(submitButton).toBeDisabled()
   })
 
