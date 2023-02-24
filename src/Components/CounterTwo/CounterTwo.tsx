@@ -1,4 +1,3 @@
-import React from 'react'
 import { CounterTwoProps } from './CoutnerTwo.types'
 
 const CounterTwo = ({

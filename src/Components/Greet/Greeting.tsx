@@ -1,4 +1,3 @@
-import React from 'react'
 import { greet } from './Greet.types'
 
 const Greeting = ({ name }: greet) => {

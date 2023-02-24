@@ -1,26 +1,21 @@
-const Application = () => {
-  return (
-    <>
+"use strict";
+exports.__esModule = true;
+var Application = function () {
+    return (<>
       <h1>Job application form</h1>
       <h2>Section 1</h2>
       <p>All fields are mandatory</p>
       <span title="close">X</span>
-      <img src="https://via.placeholder.com/150" alt="a person with a laptop" />
+      <img src="https://via.placeholder.com/150" alt="a person with a laptop"/>
       <div data-testid="custom-element">Custom HTML element</div>
       <form>
         <div>
           <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            placeholder="Fullname"
-            value="Vishwas"
-            onChange={() => {}}
-          />
+          <input type="text" id="name" placeholder="Fullname" value="Vishwas" onChange={function () { }}/>
         </div>
         <div>
           <label htmlFor="bio">Bio</label>
-          <textarea id="bio" />
+          <textarea id="bio"/>
         </div>
         <div>
           <label htmlFor="job-location">Job location</label>
@@ -35,19 +30,17 @@ const Application = () => {
         </div>
         <div>
           <label htmlFor="terms">
-            <input type="checkbox" id="terms" /> I agree to the terms and
+            <input type="checkbox" id="terms"/> I agree to the terms and
             conditions
           </label>
         </div>
         <div>
           <label htmlFor="new">
-            <textarea id="new" /> I agree to the terms and conditions
+            <textarea id="new"/> I agree to the terms and conditions
           </label>
         </div>
         <button disabled>Submit</button>
       </form>
-    </>
-  )
-}
-
-export default Application
+    </>);
+};
+exports["default"] = Application;
