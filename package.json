@@ -57,5 +57,10 @@
     "msw": "^1.0.1",
     "prettier": "2.8.4",
     "husky": "^8.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "CI=true react-scripts test"
+    }
   }
 }
