@@ -62,7 +62,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "eslint", "bash -c 'npm run check-types'"
+      "eslint", "tsc-files --noEmit"
     ],
     "*.{ts,tsx,css,scss}": [
       "prettier --write"
