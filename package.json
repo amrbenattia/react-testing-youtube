@@ -53,14 +53,10 @@
   "devDependencies": {
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-jest-dom": "^4.0.3",
+    "husky": "^8.0.0",
     "jest": "^16.0.0",
+    "lint-staged": "^13.1.2",
     "msw": "^1.0.1",
-    "prettier": "2.8.4",
-    "husky": "^8.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test"
-    }
+    "prettier": "2.8.4"
   }
 }
